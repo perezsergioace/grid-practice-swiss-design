@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+}
+
+.item div {
+  background: grey;
+}
+
+.item-a {
+  background: #eae9ea;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 1 / 1 / span 2 / span 6;
+}
+
+.item-b {
+  background: #f1c5bf;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: 3 / 1 / span 4 / span 6;
+}
+
+.item-c {
+  background: #f1c5bf;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: 4 / 5 / span 1 / span 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  overflow: hidden;
+}
+
+.item-c :hover {
+  background: #E34046;
+}
+
+.item-c p {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 30px;
+}
+
+.item-e {
+  background: #eae9ea;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / span 1 / span 1;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Questrial', sans-serif;
+}
+
+.item-e p {
+  padding: 0;
+  margin: 0;
+  font-size: 2em;
+}
+
+.item-f {
+  background-image: url("../images/mike-von-_K_KzZnJOHo-unsplash.jpg");
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 3 / 2 / span 4 / span 2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .item-f {
+    background-size: cover;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 3 / 1 / span 4 / span 2;
+  }
+}
+
+.hero-container {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: auto;
+}
+
+.hero-container :hover {
+  border: 5px solid #3386f3;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px;
+  font-size: 4em;
+  border: 5px solid #E34046;
+  font-family: 'Questrial', sans-serif;
+}
+
+.text-container {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.3em;
+  left: 50%;
+  top: 80%;
+  text-align: center;
+}
+
+.text-container :hover {
+  color: #000;
+}
+
+.text-container p {
+  padding: 20px;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

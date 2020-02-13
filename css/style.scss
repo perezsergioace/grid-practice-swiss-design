@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+html,
+body {
+	margin: 0;
+    padding: 0;
+}
+
+section {
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+}
+
+.item div {
+	background: grey;
+}
+
+.item-a {
+	background: #eae9ea;
+	grid-area: 1 / 1 / span 2 / span 6;
+}
+
+.item-b {
+	background: #f1c5bf;
+	grid-area: 3 / 1 / span 4 / span 6;
+}
+
+.item-c {
+	background: #f1c5bf;
+    grid-area: 4 / 5 / span 1 / span 2;
+    // text-align: center;
+    align-self: center;
+    overflow: hidden;
+
+    :hover {
+    background: #E34046;
+    }
+    
+    p {
+        font-family: 'Questrial', sans-serif;
+        font-size: 1em;
+        margin: 0;
+        padding: 30px;
+    }
+}
+
+.item-e {
+	background: #eae9ea;
+    grid-area: 1 / 1 / span 1 / span 1;
+    text-align: center;
+    align-self: center;
+    font-family: 'Questrial', sans-serif;
+    
+    p {
+        padding: 0;
+        margin: 0;
+        font-size: 2em;
+    }
+}
+
+.item-f {
+    background-image: url('../images/mike-von-_K_KzZnJOHo-unsplash.jpg');
+    grid-area: 3 / 2 / span 4 / span 2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // position: relative;
+
+    @media (max-width: 768px) {
+        background-size: cover;
+        grid-area: 3 / 1 / span 4 / span 2;
+
+    }
+}
+
+
+.hero-container {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin: auto;
+
+    :hover {
+        border: 5px solid #3386f3;
+    }
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 4em;
+    border: 5px solid #E34046;
+    font-family: 'Questrial', sans-serif;
+}
+
+.text-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.3em;
+    // width: 400px;
+    left: 50%;
+    top: 80%;
+    text-align: center;
+
+    :hover {
+        color: #000;
+    }
+
+    p {
+        padding: 20px;
+        margin: 0;
+    }
+}
