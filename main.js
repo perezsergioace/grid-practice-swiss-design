@@ -1,3 +1,9 @@
+// Background Animation
+TweenMax.to(".item-b", 1, {
+    height: "100%",
+    ease: Expo.easeInOut
+})
+
 TweenMax.from(".hero-container", 1.5, {
     opacity: 0,
     y: 20,
@@ -19,7 +25,7 @@ TweenMax.from(".item-c", 1.5, {
 })
 
 TweenMax.from(".text-container", 1.5, {
-    delay: 1.5,
+    delay: 1.2,
     opacity: 0,
     y: 20,
     ease: Expo.easeInOut

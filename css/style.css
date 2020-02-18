@@ -3,6 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background: #eae9ea;
 }
 
 section {
@@ -31,6 +32,7 @@ section {
 
 .item-b {
   background: #f1c5bf;
+  height: 0%;
   -ms-grid-row: 3;
   -ms-grid-row-span: 4;
   -ms-grid-column: 1;

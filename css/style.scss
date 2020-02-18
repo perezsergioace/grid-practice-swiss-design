@@ -4,6 +4,7 @@ html,
 body {
 	margin: 0;
     padding: 0;
+	background: #eae9ea;
 }
 
 section {
@@ -24,7 +25,9 @@ section {
 }
 
 .item-b {
-	background: #f1c5bf;
+    background: #f1c5bf;
+    // width: 0%;
+    height: 0%;
 	grid-area: 3 / 1 / span 4 / span 6;
 }
 
