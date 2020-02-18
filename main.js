@@ -6,7 +6,7 @@ TweenMax.to(".item-b", 1, {
 
 TweenMax.from(".hero-container", 1.5, {
     opacity: 0,
-    y: 20,
+    y: "-120%",
     ease: Expo.easeInOut
 })
 
